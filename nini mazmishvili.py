@@ -12,8 +12,6 @@ if response.status_code == 200:
     advice = content.get("slip", {}).get("advice")
     if advice:
         print("რჩევა:", advice)
-    else:
-        print("შეცდომა: ვერ მოიძებნა რჩევა ამ ID-ით.")
 else:
     print("შეცდომა: ვერ მოიძებნა რჩევა ამ ID-ით.")
 
@@ -28,6 +26,6 @@ c.execute('''CREATE TABLE IF NOT EXISTS advices (
             advice VARCHAR(255)
             )''')
 
-c.execute("INSERT INTO advices (id, advice) VALUES (?, ?)", (id_num, advice if advice else ""))
+c.execute("INSERT INTO advices (id, advice) VALUES (?, ?)", (id_num, advice))
 conn.commit()
 conn.close()
