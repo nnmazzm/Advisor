@@ -1,6 +1,7 @@
-# quiz-3
-Get random pieces of advice with the Advice Giver.
-პროექტის შესახებ ინფორმაცია:
-კოდი იღებს რჩევას Advice Slip API-დან მომხმარებლის მიერ მოწოდებული ID ნომრის საფუძველზე და ბეჭდავს მას. ის ასევე კითხულობს მონაცემებს JSON ფაილიდან, სახელად `data.json` და ბეჭდავს მის შინაარსს.
-პროექტი მუშაობს შემდეგნაირად: 
-უნდა მიუთითოთ ნებისმიერი რიცხვი კონსოლში, ამის შემდეგ კოდი დაგიბეჭდავთ ამ ნომრის შესაბამის რჩევას
+# Advisor
+
+Get random tips from the advice provider.
+
+Project information: Gets a tip from the Advice Slip API with the ID number provided by the user and prints it. It also reads from a JSON file called data.json and prints its contents. 
+
+How The project works? : You need to specify a number in the box, and the program will print a specific tip based on the id.
